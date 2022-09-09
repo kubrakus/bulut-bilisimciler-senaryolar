@@ -11,7 +11,7 @@ Bu adımda, Ad-hoc komutları ile dosya kopyalama işlemi yapacağız. Bu işlem
 Hosts dosyamızın içerisine aşağıdaki şekilde node'ları ekleyelim.
 
 ````
-# vi /etc/ansible/hosts
+vi /etc/ansible/hosts
 ````
 
 ````
@@ -22,7 +22,7 @@ node3
 Şimdi terminal sunucumuz üzerinde bir txt dosyası oluşturalım.
 
 ````
-# touch /tmp/bulutbilisimciler.txt
+touch /tmp/bulutbilisimciler.txt
 ````
 Oluşturduğumuz bu dosyayı ansible aracılığıyla hosts dosyamızdaki sunuculara kopyalayacağız.
 
@@ -32,7 +32,7 @@ ansible nodes -m copy -a "src=/tmp/bulutbilisimciler.txt dest=/tmp/bulutbilisimc
 Bu işlemi tüm nodelara değil de bir nodeda yapmak için:
 
 ````
-ansible $NodeIP -m copy -a "src=/tmp/bulutbilisimciler.txt dest=/tmp/bulutbilisimciler.txt"
+ansible $NodeHostname -m copy -a "src=/tmp/bulutbilisimciler.txt dest=/tmp/bulutbilisimciler.txt"
 ````
 Komut çıktısı aşağıdakine benzer şekilde olacaktır.
 ````
