@@ -71,6 +71,8 @@ Gelin egzersiz yaparak bu konuyu daha da pekiştirelim.
 
 ````
 mkdir /etc/ansible
+````
+````
 vi /etc/ansible/hosts
 ````
 ````
@@ -88,6 +90,8 @@ Oluşturulan ssh key'i uzaktan bağlanacağımız node'lara aşağıdaki komut i
 
 ````
 ssh-copy-id -i /root/.ssh/id_rsa.pub root@node2
+````
+````
 ssh-copy-id -i /root/.ssh/id_rsa.pub root@node3
 ````
 
@@ -100,6 +104,8 @@ Playbook dosyamızı oluşturacağımız dizini oluşturalım.
 
 ````
 # cd /root/playbook
+````
+````
 # touch copyfile.yml
 ````
 Şimdi de kopyalayacağımız dosyayı oluşturalim.
