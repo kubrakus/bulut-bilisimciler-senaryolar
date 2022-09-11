@@ -11,6 +11,7 @@ Bu adımda, Ad-hoc komutları ile dosya kopyalama işlemi yapacağız. Bu işlem
 Hosts dosyamızın içerisine aşağıdaki şekilde node'ları ekleyelim.
 
 ````
+mkdir /etc/ansible
 vi /etc/ansible/hosts
 ````
 
