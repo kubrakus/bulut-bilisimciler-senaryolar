@@ -42,26 +42,27 @@ ssh-copy-id -i /root/.ssh/id_rsa.pub root@node3
 
 Playbook dosyamızı oluşturacağımız dizini oluşturalım.
 ````
-# mkdir /root/playbook
+mkdir /root/playbook
 `````
 Şimdi bu dizin içerisinde playbook dosyamızı oluşturalim ve bir önceki bölümde yaptığımız kopyalama işlemini yapalım.
 
 ````
-# cd /root/playbook
+cd /root/playbook
 ````
 ````
-# touch copyfile.yml
+touch copyfile.yml
 ````
 Şimdi de kopyalayacağımız dosyayı oluşturalim.
 
 ````
-# touch /tmp/bulutbilisimciler.csv
+touch /tmp/bulutbilisimciler.csv
 ````
 Oluşturduğumuz copyfile.yml dosyasını vi editor ile açıp aşağıdaki şekilde düzenleyelim.
 
 ````
-# vi copyfile.yml
-
+vi copyfile.yml
+````
+````
 --- 
 - name: copy a file 
   hosts: nodes
@@ -75,7 +76,7 @@ Oluşturduğumuz copyfile.yml dosyasını vi editor ile açıp aşağıdaki şek
 Artık dosya kopyalama işlemi için playbook dosyamızı oluşturduk. Aşağıdaki komut ile bu dosyayı çalıştırabiliriz.
 
 ````
-# ansible-playbook copyfile.yml
+ansible-playbook copyfile.yml
 ````
 Komutun çıktısı aşağıdakine benzer şekilde olmalıdır. 
 
