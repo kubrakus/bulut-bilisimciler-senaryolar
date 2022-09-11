@@ -2,6 +2,6 @@
     "command": [
         "sh",
         "-c",
-        "ansible all -m ping && exit 0"
+        " [[ $(ansible all -m ping) -v ansible]] && exit 0"
     ]
 }
