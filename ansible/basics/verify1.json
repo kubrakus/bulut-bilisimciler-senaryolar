@@ -1,0 +1,7 @@
+{
+    "command": [
+        "sh",
+        "-c",
+        "ansible --version && exit 0"
+    ]
+}
