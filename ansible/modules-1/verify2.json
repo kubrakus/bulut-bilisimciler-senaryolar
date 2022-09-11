@@ -1,0 +1,7 @@
+{
+    "command": [
+        "sh",
+        "-c",
+        "ssh root@node2 python3 --version && exit 0"
+    ]
+}
