@@ -2,6 +2,6 @@
     "command": [
         "sh",
         "-c",
-        "ansible --version && exit 0"
+        "[[ -x $(ansible --version) -v ansible ]] && exit 0"
     ]
 }
