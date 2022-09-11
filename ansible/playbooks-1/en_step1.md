@@ -108,7 +108,6 @@ cd /root/playbook
 ````
 touch copyfile.yml
 ````
-Şimdi de kopyalayacağımız dosyayı oluşturalim.
 
 Oluşturduğumuz copyfile.yml dosyasını vi editor ile açıp aşağıdaki şekilde düzenleyelim.
 
