@@ -95,6 +95,12 @@ ssh-copy-id -i /root/.ssh/id_rsa.pub root@node2
 ssh-copy-id -i /root/.ssh/id_rsa.pub root@node3
 ````
 
+İlk olarak kopyalayacağımız dosyayı oluşturalim.
+
+````
+touch /tmp/bulutbilisimciler.csv
+````
+
 Playbook dosyamızı oluşturacağımız dizini oluşturalım.
 
 ````
