@@ -1,0 +1,7 @@
+{
+    "command": [
+        "sh",
+        "-c",
+        "ansible all -m ping && exit 0"
+    ]
+}
