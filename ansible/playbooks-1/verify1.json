@@ -1,0 +1,7 @@
+{
+    "command": [
+        "sh",
+        "-c",
+        "[[-x $(ansible-playbook copyfile.yml | grep ok=2) -v ansible ]] && exit 0"
+    ]
+}
