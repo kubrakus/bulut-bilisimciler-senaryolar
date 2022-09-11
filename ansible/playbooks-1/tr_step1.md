@@ -52,11 +52,7 @@ cd /root/playbook
 ````
 touch copyfile.yml
 ````
-Şimdi de kopyalayacağımız dosyayı oluşturalim.
 
-````
-touch /tmp/bulutbilisimciler.csv
-````
 Oluşturduğumuz copyfile.yml dosyasını vi editor ile açıp aşağıdaki şekilde düzenleyelim.
 
 ````
