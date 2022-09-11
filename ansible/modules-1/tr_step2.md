@@ -12,6 +12,8 @@ Hosts dosyamızın içerisine aşağıdaki şekilde node'ları ekleyelim.
 
 ````
 mkdir /etc/ansible
+````
+````
 vi /etc/ansible/hosts
 ````
 
@@ -30,6 +32,8 @@ Oluşturulan ssh key'i uzaktan bağlanacağımız node'lara aşağıdaki komut i
 
 ````
 ssh-copy-id -i /root/.ssh/id_rsa.pub root@node2
+````
+````
 ssh-copy-id -i /root/.ssh/id_rsa.pub root@node3
 ````
 
