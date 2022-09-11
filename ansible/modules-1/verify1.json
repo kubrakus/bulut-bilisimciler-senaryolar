@@ -1,0 +1,7 @@
+{
+    "command": [
+        "sh",
+        "-c",
+        "ansible nodes -m copy -a "src=/tmp/bulutbilisimciler.txt dest=/tmp/bulutbilisimciler.txt" && exit 0"
+    ]
+}
