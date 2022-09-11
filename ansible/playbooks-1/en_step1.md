@@ -117,7 +117,8 @@ Oluşturduğumuz copyfile.yml dosyasını vi editor ile açıp aşağıdaki şek
 
 ````
 vi copyfile.yml
-
+````
+````
 --- 
 - name: copy a file 
   hosts: nodes
